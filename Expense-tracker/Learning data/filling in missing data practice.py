@@ -1,5 +1,5 @@
 import pandas as pd
-
+import matplotlib.pyplot as plt
 # Mock client information
 client_data = {
     "ClientID": [1, 2, 3, 4, 5],
@@ -16,3 +16,9 @@ df["Age"]=df["Age"].fillna(df["Age"].median())
 #This fills in missing values in age column with the median age of the existing values.
 
 print(df)
+plt.hist(df["Age"], bins=5, color="blue", edgecolor="black")
+plt.xlabel("Age")
+plt.ylabel("Frequency")
+plt.title("Distribution of Ages")
+
+plt.show()
