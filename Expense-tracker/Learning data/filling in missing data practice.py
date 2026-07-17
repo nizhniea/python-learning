@@ -20,5 +20,5 @@ plt.hist(df["Age"], bins=5, color="blue", edgecolor="black")
 plt.xlabel("Age")
 plt.ylabel("Frequency")
 plt.title("Distribution of Ages")
-
+# This creates a histogram to visualize the distribution of ages in the dataset.
 plt.show()
